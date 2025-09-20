@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation/Widgets/about.dart';
 import 'package:navigation/Widgets/home.dart';
 
 void main(){
@@ -12,7 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      initialRoute: '/',
+      routes: {
+        '/' : (context)=> HomeScreen(),
+        '/about':(context)=>AboutScreen()
+      },
     );
   }
 }

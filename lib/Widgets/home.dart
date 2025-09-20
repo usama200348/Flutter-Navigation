@@ -12,9 +12,8 @@ class HomeScreen extends StatelessWidget {
         ),
         body: Center(
           child: ElevatedButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: 
-            (context)=>AboutScreen()
-            ));
+            // Navigator.push(context, MaterialPageRoute(builder:(context)=> AboutScreen(),));
+            Navigator.pushNamed(context, '/about');
           }, child: Text("Next Page")),
         ),
     );
